@@ -9,4 +9,4 @@
   text is that I’m more honest and my words are more beautiful.
 </p>
 
-<p *ngFor="let arr of arr; index as i;" [ngClass]="{'background-green' : i>=10}" [ngStyle]="{'color': i>=10 ? 'white' : 'black'}">{{ arr.time }} {{ arr.state }} {{ i }}</p>
+<p *ngFor="let Details of arr; index as i;" [ngClass]="{'background-green' : i>=10}" [ngStyle]="{'color': i>=10 ? 'white' : 'black'}">{{ Details.time }} {{ Details.state }} {{ i }}</p>

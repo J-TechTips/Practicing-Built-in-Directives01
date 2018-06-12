@@ -15,17 +15,13 @@ export class AppComponent {
  state: string ='';
 
  displayText() {
-   if (this.show === false){
-     this.show = true;
-   } else {
-     this.show = false;
-   }
+   this.show = !this.show;
    this.pushArr();
    console.log(this.displayText);
  }
  pushArr(){
    this.arr.push({
-     this:Date(),
+     time:Date(),
      state:this.show
    });
  }
